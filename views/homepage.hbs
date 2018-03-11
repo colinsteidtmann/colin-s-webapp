@@ -1,0 +1,321 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrego Springs Vacation Rentals</title>
+    
+    <!--    Stylesheet Files    -->
+    <link rel="stylesheet" href="stylesheets/normalize.css" /> 
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/home.css" />
+    <link rel="stylesheet" href="stylesheets/foundationDatePicker.css" />
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/calendar.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js"></script>
+
+    <!--    Javascript files are placed before </body>    -->
+  </head>
+  
+  <body class="home">
+    <!--  Start Hero Section  -->
+    <section class="hero">
+      <header>
+        <div class="row">
+          
+      <div class="home">
+          <nav class="top-bar" data-topbar role="navigation">
+            
+            <!--    Start Logo    -->
+            <ul class="title-area">
+              <li class="name">
+                <a href="/" class="logo">
+                  <h1>Borrego<span class="tld">rentals</span></h1>
+                </a>
+              </li>
+                <span class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></span>
+              </li>
+            </ul>  
+            <!--    End Logo    -->
+
+            <!--    Start Navigation Menu    -->
+            <section class="top-bar-section" id="mean_nav">
+              <ul class="right">
+                <li ><a href="/vacation-homes">Vacation Homes</a></li>
+                <li><a href="#testimonials">Contact</a></li>
+                <li><a href="#Download">About</a></li>
+                <li><a href="#connect">Legal Info</a></li>
+              </ul>
+            </section>
+            <!--    End Navigation Menu    -->
+
+          </nav>
+        </div>
+      </div>
+      </header>
+
+      <!--    Start Hero Caption    -->
+      <section class="caption">
+        <div class="row">
+          <div class="ui form">
+    <div class="two fields">
+      <div class="field">
+        <div class="ui calendar" id="rangestart">
+          <div class="ui input left icon">
+            <i class="calendar icon"></i>
+            <input type="text" style="" placeholder="Start">
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui calendar" id="rangeend">
+          <div class="ui input left icon">
+            <i class="calendar icon"></i>
+            <input type="text" placeholder="End">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('#rangestart').calendar({
+  type: 'date',
+  endCalendar: $('#rangeend')
+});
+$('#rangeend').calendar({
+  type: 'date',
+  startCalendar: $('#rangestart')
+});
+  </script>
+          <a href="#" class="sub_cap button large">Submit</a>
+        </div>
+      </section>
+      <!--    End Hero Caption    -->
+
+    </section>
+    <!--  End Hero Section  -->
+
+
+
+    <!--  Start Services Section  -->
+    <section class="services" id="services">     
+
+      <!--    Start Services Titles    -->
+      <div class="row">        
+        <h1 class="mean_title">The beautiful wonders of Borrego Springs</h1>
+        <h2 class="sub_title">Come see what west coast relaxing really feels like!</h2> 
+      </div>
+      <!--    End Services Titles    -->
+
+      <!--    Start Services List    -->
+      <div class="row services_list">
+        <div class="small-12 medium-3 large-3 columns">
+          <img src="images/boot.svg" alt="" title="" class="serv_icon"/>
+          <h2 class="title">Hiking</h2>
+          <p>Anza-Borrego Desert State Park has over 500 miles of dirt roads to travel down and plenty of trails to explore. If you are planning a trip to the California desert, Anza-Borrego Desert State Park has what you are looking for.</p>
+        </div>
+
+        <div class="small-12 medium-3 large-3 columns">
+          <img src="images/golf.svg" alt="" title="" class="serv_icon"/>
+          <h2 class="title">Golf</h2>
+          <p>To be truly great, both wine and golf courses depend on exceptional earth, or as the French say, the Terroir, which embodies geology, geography, climate and soil characteristics. Rarely do they all come together, but when they do, the Terroir gives birth to greatness.</p>
+        </div>
+
+        <div class="small-12 medium-3 large-3 columns">
+          <img src="images/bicycle.svg" alt="" title="" class="serv_icon"/>
+          <h2 class="title">Biking</h2>
+          <p>Whether your idea of biking is to ride a five or ten mile loop around town or a 100 mile route through the badlands, Borrego Springs has some of the finest winter road biking in the United States.  Roads are generally wide, traffic is low, and the scenery is always great. </p>
+        </div>
+
+        <div class="small-12 medium-3 large-3 columns">
+          <img src="images/swimming-pool.svg" alt="" title="" class="serv_icon"/>
+          <h2 class="title">Relaxing</h2>
+          <p>At the end of a long day full of entertainment, there is nothing like coming back to your desert home. All of our vacation rentals have air conditioning, wifi, cable tv, and the majority of them have pools. Why stay at a motel when you can stay at a fully equipped home? Come out to see what relaxing really feels like!</p>
+        </div>
+      </div>
+      <!--    End Services List    -->
+
+      <!--    Start Button    -->
+      <div class="btn_holder">
+        <a href="#" class="btn_fancy">
+          <div class="solid_layer"></div>
+          <div class="text_layer">See the rentals!</div>
+        </a>
+      </div>
+      <!--    End Button    -->
+
+    </section>
+    <!--  End Services Section  -->
+
+
+
+    <!--  Start Quote Section  -->
+    <section class="quote">
+        <blockquote>
+          <p>Did you know about the scultures?</p>
+          <hr>
+          <p><a href="http://www.abdnha.org/borrego-springs-sculptures-of-ricardo-breceda.htm" target="_blank">click for more</a></p>
+        </blockquote>
+    </section>
+    <!--  End Quote Section  -->
+
+
+
+    <!--  Start Testimonials Section  -->
+    <section class="testimonials" id="testimonials">
+      <div class="row">
+        <div class="slider_container">
+          <div id="carousel">
+            
+            <div class="tesimonial">
+              <img src="images/anna.jpg" title="" alt="">
+              <span class="name">Anna</span>
+              <p>Had a really great time staying at Charle's beautiful home; the location has gorgeous views of the mountains and desert which were more than I expected even after having been to Borrego many times. Perfect house for a relaxing weekend and very pup friendly with a huge fenced yard. Charles communicated quickly and was extremely helpful.</p>
+              <span class="author">Anna - January 2018</span>
+            </div>
+
+            <div class="tesimonial">
+              <img src="images/yuko.jpg" title="" alt="">
+              <span class="name">Yuko</span>
+              <p>The place was beautiful. Everything in the house were kept neat and very clean. Charles was very helpful and communicative. We'd love to stay there again.</p>
+              <span class="author">Yuko - December 2017</span>
+            </div>
+
+            <div class="tesimonial">
+              <img src="images/chris.jpg" title="" alt="">
+              <span class="name">Chris</span>
+              <p>We loved staying at Charlie’s place and are already thinking of staying again next year. The neighborhood was super quiet, the kitchen a great place to cook in, and the house very comfortable. Great patio and grill too. The hot tub took a bit to get set up but was so worth it! We also loved the rooftop deck — the stargazing is truly amazing and makes the property very special.</p>
+              <span class="author">Chris - December 2017</span>
+            </div>
+
+          </div>          
+        </div>
+
+        <!--    Start Testimonials Pagination    -->
+        <nav class="pagination">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#" class="selected">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </nav>
+        <!--    End Testimonials Pagination    -->
+
+      </div>
+    </section>
+    <!--  End Testimonials Section  -->
+
+
+
+    <!--  Start Call To Action Section  -->
+    <section class="cta" id="Download">
+      <div class="row">
+
+        <!--    Start CTA Titles    -->
+        <h1 class="title">Do you have any questions?</h1>
+        <h2 class="sub_title">Or do you want your house on our website?</h2>
+        <!--    End CTA Titles    -->
+
+        <!--    Start Button    -->
+        <a href="#" class="btn_fancy">
+          <div class="solid_layer"></div>
+          <div class="text_layer">Contact Us!</div>
+        </a>
+        <!--    End Button    -->
+
+      </div>
+    </section>
+    <!--  End Call To Action Section  -->
+
+
+
+    <!--  Start Map Section  -->
+    <section class="map" id="connect">
+
+      <!--    Start Map Shadow    -->
+      <div class="shadow"></div>
+      <!--    End Map Shadow    -->
+
+      <div id="map_container"></div>
+    </section>
+    <!--  End Map Section  -->
+
+
+
+    <!--  Start Footer Section  -->
+    <footer>
+      <div class="row">
+        
+        <!--    Start Copyrights    -->
+        <div class="small-12 medium-4 large-4 columns">
+          <div class="copyrights">
+            <a class="logo" href="#">
+              <h1>volcano<span class="tld">.com</span></h1>
+            </a>
+            <p>Copyright © 20014-2015 pixelhint.</p>
+          </div>
+        </div>
+        <!--    End Copyrights    -->
+
+
+        <div class="small-12 medium-8 large-8 columns">
+          <div class="contact_details right">
+            <nav class="social">
+              <ul class="no-bullet">
+                <li><a href="http://facebook.com/pixelhint" target="_blank">Facebook</a></li>
+                <li><a href="http://instagram.com/pixelhint" target="_blank">Instagram</a></li>
+                <li><a href="http://twitter.com/pixelhint" target="_blank">Twitter</a></li>
+                <li><a href="http://plus.google.com/+Pixelhint" target="_blank">Google+</a></li>
+              </ul>
+            </nav>
+
+            <div class="contact">
+              <div class="details">
+                <p>contact@pixelhint.com</p>
+                <p>+1.323 596 5770</p>
+              </div>
+
+              <p class="adress">550 Hershell Hollow Road
+              Johnson City, TN 37615</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!--  End Footer Section  -->
+
+    <!--    Start Back To Top    -->
+    <a href="#" class="btn_fancy" id="back_top">
+      <div class="solid_layer"></div>
+      
+      <div class="text_layer"><img src="images/top_arrow.png" alt="Back to top" title="" class="top_arrow"></div>
+    </a>
+    <!--    End Back To Top    -->
+
+
+
+
+
+    <!--    Javascript Files    -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/touchSwipe.min.js"></script>
+    <script type="text/javascript" src="javascripts/easing.js"></script>
+    <script type="text/javascript" src="javascripts/foundation.min.js"></script>
+    <script type="text/javascript" src="javascripts/foundation/foundation.topbar.js"></script>
+    <script type="text/javascript" src="javascripts/carouFredSel.js"></script>
+    <script type="text/javascript" src="javascripts/scrollTo.js"></script>
+    <script type="text/javascript" src="javascripts/map.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+    <script type="text/javascript" src="javascripts/foundationDatePicker.js"></script>
+  
+
+
+  </body>
+</html>
