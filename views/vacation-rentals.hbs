@@ -19,32 +19,34 @@
 
 <body>
   <!--  Start navigaion Section  -->
-<div class="container">
-  <nav class="sub_menu">
-    <ul>
-      <li><a href="/user-authentication">Become a host/manage properties</a></li>
-      <li><a href="">Contact Us</a></li>
-    </ul>
-  </nav>
-</div>
-  <section class="navigation">
-      <div class="nav-container">
-        <div class="brand">
-          <a href="/">Borrego<small class="tld">rentals</small></a>
+<div id="nav">
+  <div class="container">
+    <nav class="sub_menu">
+      <ul>
+        <li><a href="/user-authentication">Become a host/manage properties</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="/">Borrego<small class="tld">rentals</small></a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li ><a href="/">Home</a></li>
+                      <li ><a href="/vacation-rentals">Vacation Homes</a></li>
+                      <li ><a href="/promotions">Promotions</a></li>
+                      <li ><a href="/about">About Us</a></li>
+                      <li ><a href="/rates">Rates</a></li>
+                      <li><a href="/legal-info">Legal Info</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-          <ul class="nav-list">
-            <li ><a href="/">Home</a></li>
-                    <li ><a href="/vacation-rentals">Vacation Homes</a></li>
-                    <li ><a href="/promotions">Promotions</a></li>
-                    <li ><a href="/about">About Us</a></li>
-                    <li ><a href="/rates">Rates</a></li>
-                    <li><a href="/legal-info">Legal Info</a></li>
-          </ul>
-        </nav>
-      </div>
-  </section>
+    </section>
+</div>
 
 <!--Body Start -->
 
@@ -166,12 +168,21 @@
   </div>
 
 <!--Side Map Area -->
-<div class="large-5 medium-3 small-0 columns" style="padding-right:0 !important">
-  <div class="map-wrap" id="map-wrap">
-    <div id="map"></div>
+<div class="ui sticky">
+  <div class="large-5 medium-3 small-0 columns" style="padding-right:0 !important">
+    <div class="map-wrap" id="map-wrap">
+      <div id="map"></div>
+    </div>
   </div>
 </div>
 
+<script type="text/javascript">
+  $('.ui.sticky')
+  .sticky({
+    context: '#nav'
+  })
+;
+</script>
 
 
 

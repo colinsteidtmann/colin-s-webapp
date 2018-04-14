@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 //connect to MongoDB
-mongoose.connect('mongodb://localhost:3000/user-authentication');
+mongoose.connect('mongodb://localhost:27017/user-authentication');
 var db = mongoose.connection;
 
 //handle mongo error

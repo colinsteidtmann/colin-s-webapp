@@ -53,22 +53,22 @@
 </section>
 
 <!--Body Start -->
-<div class="log-in-wrapper">
-<div class="login">
-  <div class="login-triangle"></div>
-  
-  <h2 class="login-header">BorregoRentals</h2>
-  <p class="login-sub-header">If you don't have an account we will create one for you</p>
-
-  <form class="login-container">
-    <form action="/user-authentication" method="post">
-      <p><input type="email" name="email" placeholder="Email"></p>
-      <p><input type="password" name="password" placeholder="Password"></p>
-      <p><input type="submit" value="Log in / Sign Up"></p>
-    </form>
-  </form>
-</div>
-</div>
+<div class="row contact-us-wrap">
+        <form id="contact">
+          <div class="container">
+            <div class="head">
+              <h2>Contact Us</h2>
+            </div>
+            <input type="text" name="name" placeholder="Name" /><br />
+            <input  type="email" name="email" placeholder="Email" /><br />
+            <textarea type="text" name="message" placeholder="Message"></textarea><br />
+            <div class="message">Message Sent</div>
+            <button id="submit" type="submit">
+              Send!
+            </button>
+          </div>
+        </form>
+      </div>
 
 
 <!--footer-->

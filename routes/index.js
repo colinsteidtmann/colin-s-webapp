@@ -47,6 +47,11 @@ router.get('/user-authentication', function(req, res, next) {
   res.render('user-authentication', { title: 'Log In / Sign Up' });
 });
 
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contact Us' });
+});
+
 
 
 module.exports = router;

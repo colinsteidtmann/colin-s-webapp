@@ -471,6 +471,11 @@ footer p{
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+	  .marketing-site-footer ul{
+		list-style: none;
+		float: none
+	}
 }
 
 @media screen and (max-width: 63.9375em) {
@@ -479,7 +484,11 @@ footer p{
   }
 }
 
-
+@media screen and (max-width: 534px) {
+	.marketing-site-footer li{
+	margin:0 5px;
+	font-size: 10px !important;}
+}
 
 
 
@@ -1826,6 +1835,15 @@ tbody tr{
   margin-right: auto;
 }
 
+@media only screen and (max-width: 700px) {
+		#contact textarea {
+	  height:100px;
+	  margin-bottom:10px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width:90% !important;
+	}
+}
 
 #contact input:first-of-type
 {
@@ -2050,7 +2068,7 @@ tbody tr{
 
 
 .host-text-wrapper h1{
-	font-size: 100%;
+	font-size: 2em;
 	color:#d4d4d5;
 }
 
